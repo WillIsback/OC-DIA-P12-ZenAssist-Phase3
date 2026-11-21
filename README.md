@@ -10,8 +10,8 @@ Projet n°12 du parcours IA — OpenClassrooms, **Phase 3 : déploiement Machine
 
 | Phase | Objectif | Dépôt |
 |-------|----------|-------|
-| **Phase 1** | Comparaison de trois approches de classification (LLM zero-shot, ML classique, ModernBERT fine-tuné). Export du meilleur modèle ML via GitHub Actions. | [p12-phase1-zenassist](https://github.com/WillIsback/p12-phase1-zenassist) |
-| **Phase 2** | Prototype de l'interface de gestion des réclamations avec classification LLM (Mistral / vLLM). | [p12-phase2-zenassist](https://github.com/WillIsback/p12-phase2-zenassist) |
+| **Phase 1** | Comparaison de trois approches de classification (LLM zero-shot, ML classique, ModernBERT fine-tuné). Export du meilleur modèle ML via GitHub Actions. | [OC-DIA-P12-ZenAssist-Phase1](https://github.com/WillIsback/OC-DIA-P12-ZenAssist-Phase1) |
+| **Phase 2** | Prototype de l'interface de gestion des réclamations avec classification LLM (Mistral / vLLM). | [OC-DIA-P12-ZenAssist-Phase2](https://github.com/WillIsback/OC-DIA-P12-ZenAssist-Phase2) |
 | **Phase 3** | Remplacement du LLM par le modèle ML scikit-learn pour une montée en charge économiquement viable. Déploiement full-stack : API Python + frontend Next.js. | **Ce dépôt** |
 
 ### Résultats Phase 1 (1 000 tickets d'évaluation)
@@ -71,19 +71,19 @@ Le modèle ML classique (TF-IDF + SGDClassifier) offre de meilleures performance
 ### 1. Cloner le dépôt
 
 ```bash
-git clone https://github.com/WillIsback/p12-phase3-zenassist.git
-cd p12-phase3-zenassist
+git clone https://github.com/WillIsback/OC-DIA-P12-ZenAssist-Phase3.git
+cd OC-DIA-P12-ZenAssist-Phase3
 ```
 
 ### 2. Télécharger le modèle ML
 
-Le fichier `best_ml_classifier.pkl` n'est pas versionné dans git. Téléchargez-le depuis les [releases](https://github.com/WillIsback/p12-phase1-zenassist/releases/latest) du dépôt Phase 1 et placez-le dans `backend/model/` :
+Le fichier `best_ml_classifier.pkl` n'est pas versionné dans git. Téléchargez-le depuis les [releases](https://github.com/WillIsback/OC-DIA-P12-ZenAssist-Phase1/releases/latest) du dépôt Phase 1 et placez-le dans `backend/model/` :
 
 ```bash
 mkdir -p backend/model
 # Télécharger best_ml_classifier.pkl depuis les releases GitHub Phase 1
 # et le placer dans backend/model/
-wget https://github.com/WillIsback/p12-phase1-zenassist/releases/download/v0.1.1/best_ml_classifier.pkl
+wget https://github.com/WillIsback/OC-DIA-P12-ZenAssist-Phase1/releases/download/v0.1.1/best_ml_classifier.pkl
 
 mv best_ml_classifier.pkl backend/model/best_ml_classifier.pkl
 ```
