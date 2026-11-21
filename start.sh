@@ -34,7 +34,7 @@ if ! command -v node &>/dev/null; then
 fi
 if [[ ! -f "$BACKEND_DIR/model/best_ml_classifier.pkl" ]]; then
   echo -e "${YELLOW}Warning: model/best_ml_classifier.pkl not found.${NC}"
-  echo -e "${YELLOW}Download it from https://github.com/WillIsback/p12-phase1-zenassist/releases/latest${NC}"
+  echo -e "${YELLOW}Download it from https://github.com/WillIsback/OC-DIA-P12-ZenAssist-Phase1/releases/latest${NC}"
   echo -e "${YELLOW}and place it in backend/model/.${NC}"
 fi
 
